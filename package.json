@@ -23,5 +23,7 @@
 		"vite": "^2.9.13"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"@sveltejs/adapter-node": "^1.0.0-next.79"
+	}
 }
