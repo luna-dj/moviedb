@@ -1,10 +1,12 @@
-import adapter from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
+
+import node from '@sveltejs/adapter-node';
+
 const config = {
 	kit: {
-		adapter: adapter({ build: 'build'}),
-
+		adapter: node(),
+		
 		// Override http methods in the Todo forms
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']
@@ -13,4 +15,3 @@ const config = {
 };
 
 export default config;
-
